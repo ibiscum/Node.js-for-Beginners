@@ -4,17 +4,17 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "private": true,
+  "author": "",
+  "license": "ISC",
   "scripts": {
     "start": "node --require dotenv/config index.js",
     "test": "jest --setupFiles dotenv/config",
     "test:coverage": "jest --coverage --setupFiles dotenv/config",
-    "lint": "standard",
-    "lint:fix": "standard --fix",
-    "infra:start": "docker-compose up -d --build",
-    "infra:stop": "docker-compose down --remove-orphans"
+    "lint": "eslint --fix",
+    "infra:start": "docker compose up -d --build",
+    "infra:stop": "docker compose down --remove-orphans"
   },
-  "author": "",
-  "license": "ISC",
   "standard": {
     "env": [
       "jest"
@@ -25,16 +25,18 @@
   },
   "dependencies": {
     "body-parser": "^2.2.0",
-    "dotenv": "^17.2.2",
+    "dotenv": "^17.2.3",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
-    "mongoose": "8.18",
-    "express-rate-limit": "^8.1.0"
+    "express-rate-limit": "^8.2.1",
+    "mongoose": "8.20"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.28.3",
-    "jest": "^30.1.3",
-    "standard": "^17.1.2",
+    "@babel/preset-env": "^7.28.5",
+    "@eslint/js": "^9.39.1",
+    "eslint": "^9.39.1",
+    "globals": "^16.5.0",
+    "jest": "^30.2.0",
     "supertest": "^7.1.4"
   }
 }
