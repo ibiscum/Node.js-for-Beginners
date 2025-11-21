@@ -7,7 +7,16 @@
   "author": "",
   "license": "ISC",
   "standard": {
-    "env": [ "jest" ],
-    "ignore": [ "public/*.js" ]
+    "env": [
+      "jest"
+    ],
+    "ignore": [
+      "public/*.js"
+    ]
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "eslint": "^9.39.1",
+    "globals": "^16.5.0"
   }
 }
