@@ -1,4 +1,4 @@
-import { readFile } from 'fs/promises';
+// import { readFile } from 'fs/promises';
 
 /* fetch('https://api.demo.foo/v1/todo')
 .then(response => response.json())
@@ -7,7 +7,7 @@ import { readFile } from 'fs/promises';
 */
 
 const setTimeoutPromise = (time) => {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
         setTimeout(() => {
             resolve();
         }, time);
@@ -29,7 +29,7 @@ console.log('After setTimeoutPromise');
 // .catch(error => console.log(error));
 
 const randomTimeOutPromise = () => {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
         const time = Math.floor(Math.random() * 100);
         setTimeout(() => {
             console.log(`Promise resolved after ${time}ms`);
@@ -79,6 +79,8 @@ const generatePromise = shouldFail => {
 generatePromise()
 .then(generatePromise)
 .then(result => {
+    console.log("This will not be called", result); 
+
     return generatePromise(true);
 })
 .then(() => console.log("This will not be called"))

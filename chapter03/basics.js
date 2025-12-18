@@ -90,7 +90,7 @@ console.log(`JavaScript was presented to the world ${formatter.format(diffInYear
 // Equality operators
 // console.log([1,2] === [1,2]); // false
 // console.log({ name: 'John' } === { name: 'John' }); // false
-console.log(NaN === NaN); // false
+console.log(Number.isNaN(NaN)); // false
 
 console.log(1 == '1'); // true
 console.log(1 != '1'); // false
@@ -131,7 +131,8 @@ function checkValue(value) {
 checkValue(1);
 
 // The nullish coalescing operator (??)
-const fullName = null ?? "John Joe";
+let nameValue = null;
+const fullName = nameValue ?? "John Joe";
 console.log(fullName); // John Joe
 
 // The if statement
@@ -156,6 +157,7 @@ const extension = ".md";
 switch (extension) {
     case ".doc":
         console.log("This extension .doc will be deprecated soon");
+        break;
     case ".pdf":
     case ".md":
     case ".svg":
@@ -183,7 +185,7 @@ i = 0;
 do {
     console.log(`i value: ${i}`);
     i++;
-} while (false); // i value: 0
+} while (i < 1); // i value: 0
 
 // for
 for (let i = 0; i < 10; i++) {
@@ -227,9 +229,13 @@ const array2 = [1, 2, 3];
 console.log(array1 === array2); // false
 
 const emptyArray = [];
+console.log(emptyArray.length); // 0
 let numbers = [1, 2, 3];
+console.log(numbers.length); // 3
 const strings = ["Hello", "World"];
+console.log(strings.length); // 2   
 const mixed = [1, "Hello", true];
+console.log(mixed.length); // 3
 
 const arrayOne = Array.of( 1, 2, 3 );
 console.log(arrayOne);
@@ -282,8 +288,8 @@ console.log(`
 `)
 
 // <ul>
-//     <li>Joe</li>
-//      ...
+//   <li>Joe</li>
+//   ...
 // </ul>
 
 numbers = [7, 1,10, 3,15,20]
@@ -294,13 +300,19 @@ console.log(numbers.sort((a, b) => a - b))
 
 const list = [1, 2];
 const d = list[0] || 0; // 1
+console.log(d);
+
 const b = list[1] // 2
+console.log(b);
+
 const c = list[2] || 4; // 4
+console.log(c);
 
 const [ e = 0, f, g = 4 ] = list;
+console.log(e, f, g); // 1
 
 let arr = [1,2,2,3,1,4,5,4,5]
-let set = new Set(arr)
+let set = new Set(arr);
 let uniques = Array.from(set)
 console.log(uniques) // [1,2,3,4,5]
 

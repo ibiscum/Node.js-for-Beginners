@@ -1,0 +1,28 @@
+{
+  "name": "node.js-for-beginners",
+  "version": "1.0.0",
+  "description": "[![CodeQL Advanced](https://github.com/ibiscum/NodeJS-for-Beginners/actions/workflows/codeql.yml/badge.svg)](https://github.com/ibiscum/NodeJS-for-Beginners/actions/workflows/codeql.yml) [![Dependabot Updates](https://github.com/ibiscum/NodeJS-for-Beginners/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/ibiscum/NodeJS-for-Beginners/actions/workflows/dependabot/dependabot-updates)",
+  "homepage": "https://github.com/ibiscum/Node.js-for-Beginners#readme",
+  "bugs": {
+    "url": "https://github.com/ibiscum/Node.js-for-Beginners/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibiscum/Node.js-for-Beginners.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint --fix .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "eslint": "^9.39.2",
+    "globals": "^16.5.0"
+  },
+  "workspaces":[
+    "step6"
+  ]
+}

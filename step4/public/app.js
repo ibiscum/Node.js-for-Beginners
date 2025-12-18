@@ -21,6 +21,7 @@ whisperCreateButton.addEventListener('click', event => {
         createWhisper(message, user.id)
         .then(refreshAllUI)
     }
+    console.log('Create whisper button clicked', event.target);
 })
 
 // === Functions ==
@@ -40,23 +41,23 @@ function parseJwt (token) {
 const fetchAllWhispers = () => fetch('http://localhost:3000/api/v1/whisper', {
     headers: {Authentication: `Bearer ${accessToken}`}
   }).then((response) => response.json())
-const deleteWhisper = (id) => fetch(`http://localhost:3000/api/v1/whisper/${id}`, { 
+const deleteWhisper = (id) => fetch(`http://localhost:3000/api/v1/whisper/${id}`, {
     method: 'DELETE',
     headers: {Authentication: `Bearer ${accessToken}`}
 })
-const updateWhisper = (id, message) => fetch(`http://localhost:3000/api/v1/whisper/${id}`, { 
-    method: 'PUT', 
-    headers: { 
-        'Content-Type': 'application/json', 
-        'Authentication': `Bearer ${accessToken}` 
-    }, 
-    body: JSON.stringify({ message }) })
-const createWhisper = (message) => fetch('http://localhost:3000/api/v1/whisper', { 
-    method: 'POST', 
-    headers: { 
+const updateWhisper = (id, message) => fetch(`http://localhost:3000/api/v1/whisper/${id}`, {
+    method: 'PUT',
+    headers: {
         'Content-Type': 'application/json',
         'Authentication': `Bearer ${accessToken}`
-    }, 
+    },
+    body: JSON.stringify({ message }) })
+const createWhisper = (message) => fetch('http://localhost:3000/api/v1/whisper', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+        'Authentication': `Bearer ${accessToken}`
+    },
     body: JSON.stringify({ message }) })
 
 // -- UI --

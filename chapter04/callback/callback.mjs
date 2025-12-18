@@ -53,7 +53,7 @@ const doSomethingTwo = (cb) => {
     cb(error, null);
 };
 
-doSomethingTwo((error, result) => {
+doSomethingTwo((error) => {
     if (error) {
         console.log('There was an error');
         return;

@@ -8,7 +8,7 @@ const asyncFun = async (generateError) => {
 asyncFun().then((result) => console.log(result));
 asyncFun(true).catch((error) => console.log(error));
 
-const asyncFunPromise =  (generateError) => new Promise((resolve, reject) => {
+const asyncFunPromise = (generateError) => new Promise((resolve, reject) => {
     if (generateError) {
         reject(new Error("Error generated"));
     }

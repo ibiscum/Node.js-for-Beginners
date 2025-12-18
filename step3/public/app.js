@@ -21,6 +21,7 @@ whisperCreateButton.addEventListener('click', event => {
         createWhisper(message)
         .then(refreshAllUI)
     }
+    console.log('Create whisper button clicked', event.target);
 })
 
 // === Functions ==

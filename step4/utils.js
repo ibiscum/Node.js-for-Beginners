@@ -24,6 +24,6 @@ export function requireAuthentication (req, res, next) {
     req.user = decoded.data
     next()
   } catch (err) {
-    res.status(401).json({ error: 'Invalid token' })
+    res.status(401).json({ error: 'Invalid token', details: err.message })
   }
 }
