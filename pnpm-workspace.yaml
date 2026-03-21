@@ -1,0 +1,17 @@
+packages:
+  - chapter03/**
+  - chapter04/**
+  - chapter05/**
+  - chapter06/**
+  - chapter07/**
+  - step0/**
+  - step1/**
+  - step2/**
+  - step3/**
+  - step4/**
+  - step5/**
+  - step6/**
+
+onlyBuiltDependencies:
+  - bcrypt
+  - unrs-resolver
