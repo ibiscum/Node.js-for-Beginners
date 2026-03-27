@@ -2,6 +2,7 @@
 
 [![CodeQL Advanced](https://github.com/ibiscum/NodeJS-for-Beginners/actions/workflows/codeql.yml/badge.svg)](https://github.com/ibiscum/NodeJS-for-Beginners/actions/workflows/codeql.yml)
 [![Dependabot Updates](https://github.com/ibiscum/NodeJS-for-Beginners/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/ibiscum/NodeJS-for-Beginners/actions/workflows/dependabot/dependabot-updates)
+[![ESLint](https://github.com/ibiscum/Node.js-for-Beginners/actions/workflows/lint.yml/badge.svg)](https://github.com/ibiscum/Node.js-for-Beginners/actions/workflows/lint.yml)
 
 <a href="https://www.packtpub.com/product/nodejs-for-beginners/9781803245171"><img src="https://content.packt.com/B21678/cover_image_small.jpg" alt="" height="256px" align="right"></a>
 
