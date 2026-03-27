@@ -1,13 +1,13 @@
 {
-  "name": "chapter03",
+  "name": "chapter04-async-await",
   "version": "1.0.0",
   "description": "",
   "license": "ISC",
   "author": "",
   "type": "module",
-  "main": "basics.js",
+  "main": "async_await.js",
   "scripts": {
-    "start": "node basics.js"
+    "start": "node async_await.js"
   },
   "devDependencies": {
   }
