@@ -8,11 +8,11 @@ comment
 
 // Printing values and debugging
 const data = {
-    nestedData: {
-        moreNestedData: {
-            value: 1
-        }
+  nestedData: {
+    moreNestedData: {
+      value: 1
     }
+  }
 };
 
 console.log(data); // [object, object]
@@ -32,7 +32,7 @@ console.log(userName2); // Joe Doe
 // userName2 = "mary"; // TypeError: Assignment to constant variable.
 
 const user = {
-    name: "Joe Doe"
+  name: "Joe Doe"
 }
 console.log(user.name); // Joe Doe
 
@@ -67,7 +67,7 @@ const diff = jsDateAnnouncement - currentDate;
 console.log(diff);
 
 const formatter = new Intl.RelativeTimeFormat('en', {
-    numeric: 'auto'
+  numeric: 'auto'
 });
 console.log(formatter);
 
@@ -109,10 +109,10 @@ console.log(!false); // true
 console.log("String:", Boolean("Ulises"));
 console.log("1235:", Boolean(1235));
 console.log("-1235:", Boolean(-1235));
-console.log("Object:", Boolean({text: "hi"}));
+console.log("Object:", Boolean({ text: "hi" }));
 console.log("Array:", Boolean(["apple", -1, false]));
-console.log("Function:", Boolean(function(){}));
-console.log("Arrow function:", Boolean(() => {}));
+console.log("Function:", Boolean(function () { }));
+console.log("Arrow function:", Boolean(() => { }));
 
 // The falsy values:
 console.log("Empty string:", Boolean(""));
@@ -123,9 +123,9 @@ console.log("undefined:", Boolean(undefined));
 console.log("NaN:", Boolean(NaN));
 
 function checkValue(value) {
-    if(!value) {
-        throw new Error ("The value is invalid! Try again.")
-    }
+  if (!value) {
+    throw new Error("The value is invalid! Try again.")
+  }
 }
 
 checkValue(1);
@@ -138,12 +138,12 @@ console.log(fullName); // John Joe
 // The if statement
 const condition = true;
 const condition2 = true;
-if(condition) {
-    console.log("The condition is true");
+if (condition) {
+  console.log("The condition is true");
 } else if (condition2) {
-    console.log("The condition2 is true");
+  console.log("The condition2 is true");
 } else {
-    console.log("The condition and condition2 are false");
+  console.log("The condition and condition2 are false");
 }
 
 // const condition3 = true;
@@ -155,16 +155,16 @@ if(condition) {
 // The switch statement
 const extension = ".md";
 switch (extension) {
-    case ".doc":
-        console.log("This extension .doc will be deprecated soon");
-        break;
-    case ".pdf":
-    case ".md":
-    case ".svg":
-        console.log("Congratulations! You can open this file");
-        break;
-    default:
-        console.log(`${extension} is not supported`);
+  case ".doc":
+    console.log("This extension .doc will be deprecated soon");
+    break;
+  case ".pdf":
+  case ".md":
+  case ".svg":
+    console.log("Congratulations! You can open this file");
+    break;
+  default:
+    console.log(`${extension} is not supported`);
 }
 
 // Ternary operator
@@ -176,24 +176,24 @@ console.log(`The payment is ${isMember ? "20.00€" : "50.00€"}`); // The paym
 // while
 let i = 1;
 while (i <= 10) {
-    console.log(i);
-    i++;
+  console.log(i);
+  i++;
 };
 
 // do...while
 i = 0;
 do {
-    console.log(`i value: ${i}`);
-    i++;
+  console.log(`i value: ${i}`);
+  i++;
 } while (i < 1); // i value: 0
 
 // for
 for (let i = 0; i < 10; i++) {
-    console.log(i);
+  console.log(i);
 }
 
-for (let i = 0, x = 1, z = 2, limit = 10; i <= limit; x *= z, i++ ) {
-    console.log(`i: ${i}. x: ${x}. z: ${z}`);
+for (let i = 0, x = 1, z = 2, limit = 10; i <= limit; x *= z, i++) {
+  console.log(`i: ${i}. x: ${x}. z: ${z}`);
 }
 // i: 0. x: 1. z: 2
 // ...
@@ -201,9 +201,9 @@ for (let i = 0, x = 1, z = 2, limit = 10; i <= limit; x *= z, i++ ) {
 
 let x = 1;
 const z = 2, limit = 10;
-for (let i = 0; i <= limit; i++ ) {
-    console.log(`i: ${i}. x: ${x}. z: ${z}`);
-    x *= z
+for (let i = 0; i <= limit; i++) {
+  console.log(`i: ${i}. x: ${x}. z: ${z}`);
+  x *= z
 }
 
 // Using strings in JavaScript
@@ -222,7 +222,7 @@ const object = { name: "Ulises" };
 console.log(Array.isArray(object)); // false
 console.log(typeof array); // object
 console.log(typeof object); // object
-console.log("are object and array the same type?", typeof(array) === typeof(object)); // true
+console.log("are object and array the same type?", typeof (array) === typeof (object)); // true
 
 const array1 = [1, 2, 3];
 const array2 = [1, 2, 3];
@@ -237,7 +237,7 @@ console.log(strings.length); // 2
 const mixed = [1, "Hello", true];
 console.log(mixed.length); // 3
 
-const arrayOne = Array.of( 1, 2, 3 );
+const arrayOne = Array.of(1, 2, 3);
 console.log(arrayOne);
 
 console.log(Array.from('packt')); // ['p', 'a', 'c', 'k', 't']
@@ -263,7 +263,7 @@ numbers = [1, 2, 3, 4, 5]
 const mapTransformation = numbers.map(el => el * 10)
 const forEachTransformation = []
 numbers.forEach(el => {
-    forEachTransformation.push(el * 10)
+  forEachTransformation.push(el * 10)
 })
 console.log(mapTransformation) // 10,20,30,40,50
 console.log(forEachTransformation) // 10,20,30,40,50
@@ -292,7 +292,7 @@ console.log(`
 //   ...
 // </ul>
 
-numbers = [7, 1,10, 3,15,20]
+numbers = [7, 1, 10, 3, 15, 20]
 console.log(numbers.sort())
 // [1, 10, 15, 20, 3, 7]
 console.log(numbers.sort((a, b) => a - b))
@@ -308,10 +308,10 @@ console.log(b);
 const c = list[2] || 4; // 4
 console.log(c);
 
-const [ e = 0, f, g = 4 ] = list;
+const [e = 0, f, g = 4] = list;
 console.log(e, f, g); // 1
 
-let arr = [1,2,2,3,1,4,5,4,5]
+let arr = [1, 2, 2, 3, 1, 4, 5, 4, 5]
 let set = new Set(arr);
 let uniques = Array.from(set)
 console.log(uniques) // [1,2,3,4,5]
@@ -319,25 +319,27 @@ console.log(uniques) // [1,2,3,4,5]
 // Using objects in JavaScript
 
 let person = {}
+console.log(person);
 
 person = {
-    name: 'Jane',
+  name: 'Jane',
 }
+console.log(person.name);
 
 person = {
-    name: 'Jane',
-    id: 1,
-    favoriteColors: ['blue', 'green'],
-    address: {
-        street: 'Main St',
-        number: 1,
-    },
-    fullName: function() {
-        return `${this.name} Doe`
-    },
-    sayHi: function() {
-        console.log('Hello!')
-    }
+  name: 'Jane',
+  id: 1,
+  favoriteColors: ['blue', 'green'],
+  address: {
+    street: 'Main St',
+    number: 1,
+  },
+  fullName: function () {
+    return `${this.name} Doe`
+  },
+  sayHi: function () {
+    console.log('Hello!')
+  }
 }
 console.log(person.fullName()) // Jane Doe
 person.sayHi() // Hello!
@@ -346,7 +348,7 @@ console.log(person.id) // 1
 console.log(person.favoriteColors[0]) // blue
 
 person = {
-    id: 12
+  id: 12
 }
 
 person.name = 'Jane'
@@ -355,7 +357,7 @@ person.id = 1
 console.log(person.id) // 1
 
 person = {
-    id: 12
+  id: 12
 }
 console.log(person['id']) // 12
 const specialKey = 'first name with spaces'
@@ -363,8 +365,8 @@ person[specialKey] = 'Jane'
 console.log(person[specialKey]) // Jane
 
 person = {
-    id: 12,
-    name: 'Jane'
+  id: 12,
+  name: 'Jane'
 }
 
 delete person.id

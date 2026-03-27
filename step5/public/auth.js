@@ -3,6 +3,7 @@ let accessToken = localStorage.getItem('accessToken')
 
 if(accessToken) {
     localStorage.removeItem('accessToken')
+    // eslint-disable-next-line no-useless-assignment
     accessToken = null
 }
 
