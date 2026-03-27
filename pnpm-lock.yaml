@@ -24,6 +24,8 @@ importers:
 
   chapter04/callback: {}
 
+  chapter04/ifes: {}
+
   chapter05/esm: {}
 
   chapter07/emitter: {}

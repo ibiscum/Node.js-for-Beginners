@@ -1,12 +1,12 @@
 {
-  "name": "chapter04-callback",
+  "name": "chapter04-promises",
   "version": "1.0.0",
   "description": "",
   "license": "ISC",
   "author": "",
   "type": "module",
-  "main": "callback.js",
+  "main": "promises.js",
   "scripts": {
-    "start": "node callback.js"
+    "start": "node promises.js"
   }
 }
