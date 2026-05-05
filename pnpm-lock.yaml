@@ -15,8 +15,8 @@ importers:
         specifier: ^10.2.1
         version: 10.2.1
       globals:
-        specifier: ^17.5.0
-        version: 17.5.0
+        specifier: ^17.6.0
+        version: 17.6.0
 
   chapter03: {}
 
@@ -44,7 +44,7 @@ importers:
         version: 10.2.1
       globals:
         specifier: ^17.4.0
-        version: 17.5.0
+        version: 17.6.0
 
   step1:
     dependencies:
@@ -69,7 +69,7 @@ importers:
         version: 10.2.1
       globals:
         specifier: ^17.4.0
-        version: 17.5.0
+        version: 17.6.0
       jest:
         specifier: ^30.3.0
         version: 30.3.0(@types/node@25.5.0)
@@ -137,7 +137,7 @@ importers:
         version: 10.2.1
       globals:
         specifier: ^17.4.0
-        version: 17.5.0
+        version: 17.6.0
       jest:
         specifier: ^30.3.0
         version: 30.3.0(@types/node@25.5.0)
@@ -2028,8 +2028,8 @@ packages:
     resolution: {integrity: sha512-AhO5QUcj8llrbG09iWhPU2B204J1xnPeL8kQmVorSsy+Sjj1sk8gIyh6cUocGmH4L0UuhAJy+hJMRA4mgA4mFQ==}
     engines: {node: '>=8'}
 
-  globals@17.5.0:
-    resolution: {integrity: sha512-qoV+HK2yFl/366t2/Cb3+xxPUo5BuMynomoDmiaZBIdbs+0pYbjfZU+twLhGKp4uCZ/+NbtpVepH5bGCxRyy2g==}
+  globals@17.6.0:
+    resolution: {integrity: sha512-sepffkT8stwnIYbsMBpoCHJuJM5l98FUF2AnE07hfvE0m/qp3R586hw4jF4uadbhvg1ooIdzuu7CsfD2jzCaNA==}
     engines: {node: '>=18'}
 
   globalthis@1.0.4:
@@ -5581,7 +5581,7 @@ snapshots:
     dependencies:
       type-fest: 0.20.2
 
-  globals@17.5.0: {}
+  globals@17.6.0: {}
 
   globalthis@1.0.4:
     dependencies:
