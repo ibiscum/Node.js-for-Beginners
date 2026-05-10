@@ -12,6 +12,10 @@ packages:
   - step5/**
   - step6/**
 
+allowBuilds:
+  bcrypt: true
+  unrs-resolver: true
+
 onlyBuiltDependencies:
   - bcrypt
   - unrs-resolver
