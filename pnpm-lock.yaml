@@ -15,8 +15,8 @@ importers:
         specifier: ^10.8.1
         version: 10.8.1
       globals:
-        specifier: ^17.9.0
-        version: 17.9.0
+        specifier: ^17.11.0
+        version: 17.11.0
 
   chapter03: {}
 
@@ -44,7 +44,7 @@ importers:
         version: 10.8.1
       globals:
         specifier: ^17.6.0
-        version: 17.9.0
+        version: 17.11.0
 
   step1:
     dependencies:
@@ -69,7 +69,7 @@ importers:
         version: 10.8.1
       globals:
         specifier: ^17.6.0
-        version: 17.9.0
+        version: 17.11.0
       jest:
         specifier: ^30.4.0
         version: 30.4.2(@types/node@25.7.0)
@@ -137,7 +137,7 @@ importers:
         version: 10.8.1
       globals:
         specifier: ^17.6.0
-        version: 17.9.0
+        version: 17.11.0
       jest:
         specifier: ^30.4.0
         version: 30.4.2(@types/node@25.7.0)
@@ -2539,8 +2539,8 @@ packages:
     resolution: {integrity: sha512-AhO5QUcj8llrbG09iWhPU2B204J1xnPeL8kQmVorSsy+Sjj1sk8gIyh6cUocGmH4L0UuhAJy+hJMRA4mgA4mFQ==}
     engines: {node: '>=8'}
 
-  globals@17.9.0:
-    resolution: {integrity: sha512-m/MvAW61QVU5VDNF1Vj8axt016h8w7L5TU1e9zlab7XIttAT2YAlCwl75K1fOqvMM9apmD7lbCIRhpfkhmxhCg==}
+  globals@17.11.0:
+    resolution: {integrity: sha512-Z2I8hM+PbJDXQDq3Icgpzv+mPdwr68iZUU9d5WW4FuXfDUQfkZaZuvjMv42/5crNyw154+9+VWXbYrUgDXbxNw==}
     engines: {node: '>=18'}
 
   globalthis@1.0.4:
@@ -6188,12 +6188,12 @@ snapshots:
 
   escape-string-regexp@4.0.0: {}
 
-  eslint-config-standard-jsx@11.0.0(eslint-plugin-react@7.37.5(eslint@10.8.1))(eslint@8.57.1):
+  eslint-config-standard-jsx@11.0.0(eslint-plugin-react@7.37.5(eslint@8.57.1))(eslint@8.57.1):
     dependencies:
       eslint: 8.57.1
       eslint-plugin-react: 7.37.5(eslint@8.57.1)
 
-  eslint-config-standard@17.1.0(eslint-plugin-import@2.32.0(eslint@10.8.1))(eslint-plugin-n@15.7.0(eslint@10.8.1))(eslint-plugin-promise@6.6.0(eslint@10.8.1))(eslint@8.57.1):
+  eslint-config-standard@17.1.0(eslint-plugin-import@2.32.0(eslint@10.8.1))(eslint-plugin-n@15.7.0(eslint@8.57.1))(eslint-plugin-promise@6.6.0(eslint@8.57.1))(eslint@8.57.1):
     dependencies:
       eslint: 8.57.1
       eslint-plugin-import: 2.32.0(eslint@8.57.1)
@@ -6656,7 +6656,7 @@ snapshots:
     dependencies:
       type-fest: 0.20.2
 
-  globals@17.9.0: {}
+  globals@17.11.0: {}
 
   globalthis@1.0.4:
     dependencies:
@@ -7927,8 +7927,8 @@ snapshots:
   standard@17.1.2:
     dependencies:
       eslint: 8.57.1
-      eslint-config-standard: 17.1.0(eslint-plugin-import@2.32.0(eslint@10.8.1))(eslint-plugin-n@15.7.0(eslint@10.8.1))(eslint-plugin-promise@6.6.0(eslint@10.8.1))(eslint@8.57.1)
-      eslint-config-standard-jsx: 11.0.0(eslint-plugin-react@7.37.5(eslint@10.8.1))(eslint@8.57.1)
+      eslint-config-standard: 17.1.0(eslint-plugin-import@2.32.0(eslint@10.8.1))(eslint-plugin-n@15.7.0(eslint@8.57.1))(eslint-plugin-promise@6.6.0(eslint@8.57.1))(eslint@8.57.1)
+      eslint-config-standard-jsx: 11.0.0(eslint-plugin-react@7.37.5(eslint@8.57.1))(eslint@8.57.1)
       eslint-plugin-import: 2.32.0(eslint@8.57.1)
       eslint-plugin-n: 15.7.0(eslint@8.57.1)
       eslint-plugin-promise: 6.6.0(eslint@8.57.1)
