@@ -255,8 +255,8 @@ importers:
         specifier: ^9.0.3
         version: 9.0.3
       mongoose:
-        specifier: ~9.9.4
-        version: 9.9.4
+        specifier: ~9.9.5
+        version: 9.9.5
       validator:
         specifier: ^13.15.35
         version: 13.15.35
@@ -3286,8 +3286,8 @@ packages:
     resolution: {integrity: sha512-nuSYGUWWzNd4EAbGYxE469wPTL+kmxb5+91YvCvMkJ08rvNRht/usZUU3LuFuk7rDutF2QWBZHPHuzM8TxXApA==}
     engines: {node: '>=20.19.0'}
 
-  mongoose@9.9.4:
-    resolution: {integrity: sha512-Gc7buf0ExrOZ3t8MD8tVzTek7Qr5d+tEwj4GRFmHCtTZvpaDb38EVsXgCkYacPL9ICAftgS+FGe+dQHLRLHhcw==}
+  mongoose@9.9.5:
+    resolution: {integrity: sha512-t/kUoeDjlHmav7yCaq//YKU3wiIgUPaTj4GrluiTHUw4jQ77/CXtdMDSor4f1u3SKLhIK6NgCF+AzzUqU02Aag==}
     engines: {node: '>=20.19.0'}
 
   mpath@0.9.0:
@@ -7600,7 +7600,7 @@ snapshots:
       - snappy
       - socks
 
-  mongoose@9.9.4:
+  mongoose@9.9.5:
     dependencies:
       '@standard-schema/spec': 1.1.0
       kareem: 3.3.0
