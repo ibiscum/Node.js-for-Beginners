@@ -35,7 +35,7 @@
     "validator": "^13.15.35"
   },
   "devDependencies": {
-    "@babel/preset-env": "^8.0.2",
+    "@babel/preset-env": "^8.0.5",
     "jest": "^30.5.1",
     "standard": "^17.1.2",
     "supertest": "^7.2.2"
