@@ -15,8 +15,8 @@ importers:
         specifier: ^10.11.0
         version: 10.11.0(supports-color@8.1.1)
       globals:
-        specifier: ^17.12.0
-        version: 17.12.0
+        specifier: ^17.13.0
+        version: 17.13.0
 
   chapter03: {}
 
@@ -44,7 +44,7 @@ importers:
         version: 10.11.0(supports-color@8.1.1)
       globals:
         specifier: ^17.6.0
-        version: 17.12.0
+        version: 17.13.0
 
   step1:
     dependencies:
@@ -69,7 +69,7 @@ importers:
         version: 10.11.0(supports-color@8.1.1)
       globals:
         specifier: ^17.6.0
-        version: 17.12.0
+        version: 17.13.0
       jest:
         specifier: ^30.4.0
         version: 30.5.2(@types/node@26.4.1)(supports-color@8.1.1)
@@ -137,7 +137,7 @@ importers:
         version: 10.11.0(supports-color@8.1.1)
       globals:
         specifier: ^17.6.0
-        version: 17.12.0
+        version: 17.13.0
       jest:
         specifier: ^30.4.0
         version: 30.5.2(@types/node@26.4.1)(supports-color@8.1.1)
@@ -2682,8 +2682,8 @@ packages:
     resolution: {integrity: sha512-AhO5QUcj8llrbG09iWhPU2B204J1xnPeL8kQmVorSsy+Sjj1sk8gIyh6cUocGmH4L0UuhAJy+hJMRA4mgA4mFQ==}
     engines: {node: '>=8'}
 
-  globals@17.12.0:
-    resolution: {integrity: sha512-cezEd/DTyyht9cvSSURyygXPfy04GtWO/5e6ZPvH7fCtjKz9PYOmuawphw1Ctd1f6C+5JypXfGD7ahNMXvevBA==}
+  globals@17.13.0:
+    resolution: {integrity: sha512-RwMTC61u7hrG3ZJMkZQOK4JLJrKS8QtoTii63EmWvFXHqycY9FObBJQCbsLxSO8kjKhWE5kV1GC+Vb1g3RI0Zg==}
     engines: {node: '>=18'}
 
   globalthis@1.0.4:
@@ -6921,7 +6921,7 @@ snapshots:
     dependencies:
       type-fest: 0.20.2
 
-  globals@17.12.0: {}
+  globals@17.13.0: {}
 
   globalthis@1.0.4:
     dependencies:
